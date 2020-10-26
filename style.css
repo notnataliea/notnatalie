@@ -1,0 +1,91 @@
+
+
+body {
+  
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0px;
+    width:100%;
+  }
+
+
+.topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing:3px;
+      }
+.topnav {
+    margin-right:80px;
+
+}
+
+.navbar {
+    justify-content: space-between;
+    background-color: #292727;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size:2rem;
+  text-transform: uppercase;
+  letter-spacing:3px;
+}
+  
+.h1 {
+  transition:all .5s ease;
+  }
+h1:hover {
+  transition: all .5s ease;
+  letter-spacing:10px;
+  margin-left:50px;
+  }
+
+
+.hero {
+  padding-left:50%;
+  padding-top:30%;
+  padding-bottom:30%;
+  padding-right:100%;
+  background-color:#292727;
+}
+
+.line {
+
+position: absolute;
+left: -39.95px;
+top: 198.26px;
+
+
+}
+
+.line-2 { 
+
+
+position: absolute;
+left: 705.43px;
+top: 470.64px;
+
+
+}
+
+@media screen and (max-width: 1300px) {
+.hero {
+  padding:50%;
+}
+.navbar {
+padding:0%;
+}
+.line {
+  display:none;
+}
+.line-2 {
+  display:none;
+}
+}
