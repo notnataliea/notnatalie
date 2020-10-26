@@ -89,3 +89,9 @@ padding:0%;
   display:none;
 }
 }
+@media screen and (max-width: 1485px) {
+  h1:hover {
+  letter-spacing:5px;
+
+  }
+}
