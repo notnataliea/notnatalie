@@ -1,97 +1,115 @@
-
-
 body {
-  
-    font-family: 'Noto Sans JP', sans-serif;
-    margin: 0px;
-    width:100%;
-  }
-
-
-.topnav a {
-    float: right;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    letter-spacing:3px;
-      }
-.topnav {
-    margin-right:80px;
-
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0px;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1300px;
+  width: 100%;
+  padding-right: 80px;
+}
+@media screen and (max-width: 580px) {
+  .topnav {
+    justify-content: center;
+    padding-right: 0px;
+  }
+}
+.topnav a {
+  height: 30px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 3px;
+}
+.topnav a:hover {
+  background-color: #535353;
+}
 .navbar {
-    justify-content: space-between;
-    background-color: #292727;
+  display: flex;
+  width: 100%;
+  background-color: #292727;
+}
+
+
+section { 
+  overflow: hidden;
+  margin: -1px;
 }
 
 .hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:white;
-  font-size:2rem;
+  color: white;
+  font-size: 2rem;
   text-transform: uppercase;
-  letter-spacing:3px;
+  letter-spacing: 3px;
 }
-  
-.h1 {
-  transition:all .5s ease;
-  }
+h1 {
+  transition: all 0.5s cubic-bezier(0, 0.84, 0.99, 1);
+}
 h1:hover {
-  transition: all .5s ease;
-  letter-spacing:10px;
-  margin-left:50px;
-  }
-
+  letter-spacing: 10px;
+  margin-left: 50px;
+}
 
 .hero {
-  padding-left:50%;
-  padding-top:30%;
-  padding-bottom:30%;
-  padding-right:100%;
-  background-color:#292727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #292727;
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100%;
+}
+.bg-white {
+  background: white;
+  padding: 2rem 15px;
 }
 
+.line img, .line-2 img {
+  overflow: hidden;
+}
 .line {
-
-position: absolute;
-left: -39.95px;
-top: 198.26px;
-
-
+  position: absolute;
+  left: -1rem;
+  top: 9rem;
 }
 
-.line-2 { 
-
-
-position: absolute;
-left: 705.43px;
-top: 470.64px;
-
-
+.line-2 {
+  position: absolute;
+  left: 35rem;
+  top: 20rem;
 }
 
 @media screen and (max-width: 1300px) {
-.hero {
-  padding:50%;
+  h1 {
+    max-width: 17rem;
+  }
+  .line {
+    left: -17rem;
+    top: 5rem;
+  }
+  .line-2 {
+    left: 22rem;
+  }
 }
-.navbar {
-padding:0%;
-}
-.line {
-  display:none;
-}
-.line-2 {
-  display:none;
-}
+@media screen and (max-width: 580px) {
+  .line {
+    left: -21rem;
+    top: 3rem;
+  }
+  .line-2 {
+  }
 }
 @media screen and (max-width: 1485px) {
   h1:hover {
-  letter-spacing:5px;
-
+    letter-spacing: 5px;
   }
 }
